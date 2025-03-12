@@ -1,0 +1,203 @@
+/*Selector universal*/
+* { 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+    width: 90%;
+    position: relative;
+    align-content: center;
+}
+
+/*Selector etiqueta*/
+h1 {
+    align-items: center;
+    font-weight: 100;
+    font-family: "Sigmar", serif;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+h1 {
+    align-items: center;
+    font-weight: 100;
+    font-family: "Quichsand", serif;
+    color: aliceblue;
+    border-radius: 10px;
+    box-shadow: darkgray 5px 5px 10px inset;
+}
+
+p {
+    font-family: "Open Sans", serif;
+}
+
+nav {
+    text-align: center;
+    color: white;
+    background-color: lightgrey;
+    margin: auto;
+    position: flex;
+    height: 50px;
+    border: 1px solid;
+    border-radius: 10px;
+    box-shadow: darkgray 5px 5px 10px inset;
+}
+
+/*Selector Clase*/
+.titulo {
+    text-align: center;
+    background-color: gray;
+    padding-bottom: 5px;
+    margin: 2px;
+}
+
+.valor {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+main {
+    display: inline;
+}
+
+section {
+    padding: 20px;
+    height: 30%;
+    width: 30%;
+}
+
+/*Selector ID*/
+#center {
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/*Selector descendiente*/
+nav ul {
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+/*Selector hijo*/
+nav ul > li {
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    padding: 1%;
+    margin-bottom: 0;
+    border-right: 1px;
+
+}
+
+/*Selector adyacente*/
+summary + p {
+    font-style: italic;
+    font-weight: lighter;
+}
+
+/*Selector hermano*/
+summary ~ p {
+    font-style: italic; 
+    font-size: small;
+}
+
+/*Selector de atributo específico*/
+input[type="text"] { border: 1px solid black; }
+
+
+/*Selector de atributo con valor que termina con ($=)*/
+a[href$=".txt"] { 
+    color: red; 
+}
+
+/*Seudo-clases cursor sobre un elemento*/
+nav li:hover { 
+    background-color: darkgray; 
+}
+
+/*Seudo-clases elemento recibe el foco*/
+nav > li:focus { 
+    background-color: rgb(126, 18, 18); 
+}
+
+/*Seudo-clases primer hijo de un elemento*/
+p:first-child { 
+    font-weight: bold; 
+}
+
+/*Seudo-clases último hijo de un elemento*/
+nav details:last-child { 
+    font-style: italic; 
+}
+
+/*Seudo-clases hijo número n de un elemento*/
+ul li:nth-child(2),li:nth-child(3),li:nth-child(4) { 
+    margin-left: 5%;
+}
+
+/*Seudo-clases elementos que no coinciden con el selector especificado*/
+p:not(.especial) { 
+    color: gray; 
+}
+
+/*Seudo-elementos insertar contenido antes de un elemento*/
+.valor::before { 
+    content: "$ "; 
+}
+
+/*Seudo-elementos insertar contenido después de un elemento*/
+ul::after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+/*Avanzados Selectores de grupo*/
+h1, h2, h3 { 
+    font-family: Arial, sans-serif; 
+}
+
+/*Avanzados Selecciona el n-ésimo elemento desde el final.*/
+tr:nth-last-child(1) { 
+    background-color: lightgray; 
+}
+
+/* 
+/*Seudo-elementos Selecciona la primera letra de un elemento*/
+p::first-letter { 
+    color: blue;  
+}
+
+/*Seudo-elementos Selecciona la primera línea de un elemento*/
+p::first-line { 
+    color: blue; 
+}
+
+/*Avanzados texto que está siendo seleccionado por el usuario*/
+::selection { 
+    color: blue; 
+}
+
+/*Avanzados elementos que no contienen ningún hijo.*/
+div:empty { 
+    color: blue; 
+}
+
+/*Avanzados Selectores de combinaciones complejas*/
+p:nth-of-type(2) { 
+    color: blue; 
+}
+
+/*Selector de atributo con valor que contiene (*=)*/
+a[href*="example"] { 
+    color: blue; 
+}
+
+/*Selector de atributo que empieza con (^=)*/
+a[href^="https"] { 
+    color: blue; 
+}
+

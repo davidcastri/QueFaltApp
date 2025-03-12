@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Style/Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Sigmar&display=swap" rel="stylesheet">
+
+    <title>Compra</title>
+</head>
+<body>
+<header> 
+    <h1 class="titulo"> 
+        <img src="../Images/cart.png" alt="Nueva compra" width="50">
+        Nueva Compra 
+    </h1>
+    <nav > 
+        <ul><li><details><summary>
+                            <a href="../index.html"> Principal </a>  
+                        </summary> 
+                        <p>>Pagina principal del sitio </p>
+                </details></li>  
+            <li><details><summary>
+                            <a href="Compra.html"> Compra </a> 
+                        </summary> 
+                        <p>>Registra una nueva compra en el sistema </p>
+                </details></li>  
+            <li><details><summary>
+                            <a href="Inventario.html"> Inventario </a>  
+                        </summary> 
+                        <p>>Revisa el estado de los articulos comprados </p>
+                </details></li>
+            <li><details><summary>
+                            <a href="Estadistica.html"> Estadisticas </a>  
+                        </summary> 
+                        <p>>Conoce el historico de ventas </p>
+                </details></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section>
+        <h2>Registra una nueva compra</h2>
+        <form action="#" name="Compra" method="get">
+            <label for="almacen">Almacen: <input type="text" name="almacen" id="almacen"> </label> <br><br>
+            <label for="fecha">Fecha: <input type="date" name="fecha" id="fecha"> </label> <br>
+            <h3>Productos</h3>
+            <table>
+                <tr>
+                    <td>Queso: </td>
+                    <td><input type="checkbox" name="queso" value="queso"> </td>
+                    <td><input type="number" name="queso_m" id="queso_m" > </td>
+                </tr>
+                <tr>
+                    <td>Leche: </td>
+                    <td><input type="checkbox" name="leche" value="leche"></td> 
+                    <td><input type="number" name="leche_m" id="leche_m"></td> 
+                </tr>
+                <tr>
+                    <td>Arepas: </td>
+                    <td><input type="checkbox" name="arepas" value="arepas"></td> 
+                    <td><input type="number" name="arepas_m" id="arepas_m"></td> 
+                </tr> 
+                <tr>
+                    <td>Carne: </td>
+                    <td><input type="checkbox" name="carne" value="carne"></td> 
+                    <td><input type="number" name="carne_m" id="carne_m"></td> 
+                </tr>
+            </table> <br>   
+            <input type="submit" value="Enviar"><br>
+
+        </form>
+    </section>
+</main>
+<footer>
+    &copy; David Castrillon - Derechos Reservados 2025
+</footer> 
+</body>
+</html>
