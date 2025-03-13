@@ -3,10 +3,33 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-header {
-    width: 90%;
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr; /*1 columna*/
+    grid-template-rows: 1fr 8fr 1fr; /* Fila para el encabezado, luego contenido y pie de página */
+    grid-template-areas:
+    "Top"
+    "mid"
+    "footer";
+    height: 100%;
+   }
+   
+.Top {
+    width: 100%;
     position: relative;
     align-content: center;
+}
+
+.Mid {
+    width: 100%;
+    position: relative;
+    align-content: center;
+}
+
+.Bot {
+    width: 100%;
+    position: relative;
+    align-content: roght;
 }
 
 /*Selector etiqueta*/
@@ -14,15 +37,8 @@ h1 {
     align-items: center;
     font-weight: 100;
     font-family: "Sigmar", serif;
-    border: 1px solid;
-    border-radius: 10px;
-}
-
-h1 {
-    align-items: center;
-    font-weight: 100;
-    font-family: "Quichsand", serif;
     color: aliceblue;
+    border: 1px solid;
     border-radius: 10px;
     box-shadow: darkgray 5px 5px 10px inset;
 }
@@ -56,7 +72,10 @@ nav {
 }
 
 main {
-    display: inline;
+    width: 100%;
+    position: relative;
+    align-content: center;
+    background-color: #eaeaea;
 }
 
 section {
@@ -73,6 +92,20 @@ section {
 
 }
 
+#left {
+    margin: auto;
+    align-items: left;
+    justify-content: left;
+
+}
+
+#right {
+    margin: auto;
+    align-items: right;
+    justify-content: right;
+
+}
+
 /*Selector descendiente*/
 nav ul {
     text-align: center;
@@ -84,11 +117,11 @@ nav ul {
 /*Selector hijo*/
 nav ul > li {
     font-weight: bold;
-    position: relative;
-    display: inline-block;
     padding: 1%;
     margin-bottom: 0;
     border-right: 1px;
+    position: relative;
+    display: inline-block;
 
 }
 
