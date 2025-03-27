@@ -1,0 +1,69 @@
+/*Selector universal*/
+* { 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+   
+/*Selector etiqueta*/
+h1 {
+    align-items: center;
+    font-weight: 100;
+    font-family: "Sigmar", serif;
+    color: aliceblue;
+    border: 1px solid;
+    border-radius: 10px;
+    box-shadow: darkgray 5px 5px 10px inset;
+}
+
+p {
+    font-family: "Open Sans", serif;
+}
+
+
+header {
+    width: 100%;
+    position: relative;
+    align-content: center;
+    /*background-color: #eaeaea;*/
+    grid-area: "top";
+    
+}
+
+main {
+    width: 100%;
+    height: 80%;
+    position: relative;
+    align-content: center;
+    background-color: #eaeaea;
+    grid-area: "mid";
+}
+
+footer {
+    width: 100%;
+    position: fixed;
+    background-color: #1d01d4;
+    grid-area: "foo";
+    color: white;
+    text-align: right;
+    grid-area: "foo";
+}
+
+.cont {
+    padding-left: 50px;
+    padding-top: 10px;
+}
+
+.value {
+    text-align: right;
+}
+
+.edit-btn {
+    border: 1px solid gray;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+table {
+    width: 400px;
+}
